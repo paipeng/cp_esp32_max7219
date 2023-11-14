@@ -55,10 +55,10 @@ bool invertUpperZone = false;
 #define ARRAY_SIZE(a) (sizeof(a)/sizeof(a[0]))
 char *msg[] =
 {
-  "Create double height displays using 2 custom fonts and 2 zones",
+  "  :)",
   "Zone 0 for lower half",
   "Zone 1 for upper half",
-  "BIG",
+  " BBG",
   "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   "abcdefghijklmnopqrstuvwxyz",
   "0123456789",
@@ -147,13 +147,13 @@ void loop(void)
     case 3:
       P.setFont(ZONE_LOWER, BigFontLower);
       P.setFont(ZONE_UPPER, BigFontUpper);
-      P.displayZoneText(ZONE_LOWER, msg[3], PA_CENTER, SCROLL_SPEED, 2000, PA_PRINT, PA_NO_EFFECT); // PA_SCROLL_LEFT, PA_SCROLL_LEFT);
-      P.displayZoneText(ZONE_UPPER, msg[3], PA_CENTER, SCROLL_SPEED, 2000, PA_PRINT, PA_NO_EFFECT); //PA_SCROLL_RIGHT, PA_SCROLL_RIGHT);
+      P.displayZoneText(ZONE_LOWER, msg[3], PA_CENTER, SCROLL_SPEED, 20000, PA_PRINT, PA_NO_EFFECT); // PA_SCROLL_LEFT, PA_SCROLL_LEFT);
+      P.displayZoneText(ZONE_UPPER, msg[3], PA_CENTER, SCROLL_SPEED, 20000, PA_PRINT, PA_NO_EFFECT); //PA_SCROLL_RIGHT, PA_SCROLL_RIGHT);
       break;
     }
 
     // prepare for next pass
-    cycle = (cycle + 1) % ARRAY_SIZE(msg);
+    //cycle = (cycle + 1) % ARRAY_SIZE(msg);
 
     // synchronise the start
     P.displayClear();
