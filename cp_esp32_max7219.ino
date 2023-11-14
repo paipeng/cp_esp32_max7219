@@ -55,7 +55,7 @@ bool invertUpperZone = false;
 #define ARRAY_SIZE(a) (sizeof(a)/sizeof(a[0]))
 char *msg[] =
 {
-  "  :)",
+  "  !:)",
   "Zone 0 for lower half",
   "Zone 1 for upper half",
   " BBG",
