@@ -79,6 +79,9 @@ void setup(void)
   // initialise the LED display
   P.begin(MAX_ZONES);
 
+  // set intensity
+  P.setIntensity(1);
+
   // Set up zones for 2 halves of the display
   // Each zone gets a different font, making up the top
   // and bottom half of each letter
