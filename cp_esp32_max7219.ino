@@ -35,7 +35,7 @@
 #define MAX_ZONES 2
 #define ZONE_SIZE 4
 #define MAX_DEVICES (MAX_ZONES * ZONE_SIZE)
-#define SCROLL_SPEED  30
+#define SCROLL_SPEED  100
 
 #define ZONE_UPPER  1
 #define ZONE_LOWER  0
